@@ -1,0 +1,42 @@
+
+Nome tabella: Dati Auto Usata
+
+
+id - PRIMARY_KEY - unsignedint - MEDIUMINT - AUTOINCREMENT
+
+codiceProprietario - intero - INT - NOTNULL
+nome - stringa - VARCHAR(150) - NOTNULL
+cognome - stringa - VARCHAR(100) - NOTNULL
+dataNascita - data - DATE - NOTNULL
+indirizzo - stringa - VARCHAR(255) - NOTNULL
+cap - intero - SMALLINT - NOTNULL 
+città - stringa - VARCHAR(200) - NOTNULL
+provincia - stringa - VARCHAR(200) - NOTNULL
+email - stringa - VARCHAR(255) - NOTNULL
+cellulare - intero - INT - NOTNULL
+telefono - intero - INT - NULL
+
+codiceAuto - intero - INT - UNIQUE - NOTNULL
+marca - stringa - VARCHAR(50) - NOTNULL
+modello - stringa - VARCHAR(100) - NOTNULL
+tipologia - stringa - VARCHAR(50) - NOTNULL
+versione - intero - MEDIUMINT - NOTNULL
+cilindrata - intero - MEDIUMINT - NOTNULL
+targa - stringa - VARCHAR(7) - NOTNULL
+alimentazione - stringa - VARCHAR(30) - NOTNULL
+coloreEsterni - stringa - VARCHAR(50) - NOTNULL
+coloreInterni - stringa - VARCHAR(50) - NOTNULL
+descrizioneAccessori - stringa - TEXT - NULL
+descrizioneModifiche - stringa - TEXT - NULL
+prezzo - numero decimale - FLOAT(8, 2) - NOTNULL
+sconto - numero decimale - FLOAT(6, 2) - NULL
+annoImmatricolazione - data - DATE - NOTNULL
+kmPercorsi - numero decimale - FLOAT(8, 2) - NOTNULL
+percentualeUsuraPneumatici - intero - TINYINT - NOTNULL
+dataAcquisto - data - DATE - NOTNULL
+
+codiceRiparazione - intero - INT - UNIQUE - NULL
+tipoRiparazione - stringa - VARCHAR(255) - NULL
+descrizioneRiparazione - stringa - TEXT - NULL
+costoRiparazione - numero decimale - FLOAT(7, 2) - NULL
+
